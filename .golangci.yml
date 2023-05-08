@@ -217,6 +217,16 @@ issues:
   # Default: 3
   max-same-issues: 50
 
+  # re-enable some disabled checks
+  include:
+    - EXC0002
+    - EXC0004
+    - EXC0011
+    - EXC0012
+    - EXC0013
+    - EXC0014
+    - EXC0015
+
   exclude-rules:
     # - path: "path/to/file.go"
     #   linters: [ dupl ]

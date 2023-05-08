@@ -7,6 +7,7 @@ import (
 	"sync"
 )
 
+// DEBUG set to true to enable debug printing
 var DEBUG = false
 
 type ClassType string
@@ -104,6 +105,7 @@ func (m *Mem) Forget(class ClassType, key KeyType) {
 	delete(c.memory, key)
 }
 
+// Size returns the number of items saved for all keys
 func (m *Mem) Size() int {
 	i := 0
 	m.lock.RLock()

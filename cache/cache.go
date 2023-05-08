@@ -9,7 +9,10 @@ import (
 	"sync"
 )
 
+// ErrKeyAlreadyExists when adding a key that is already in the cache
 var ErrKeyAlreadyExists = errors.New("key already exists")
+
+// ErrKeyDoesNotExist when getting a key that does not exist
 var ErrKeyDoesNotExist = errors.New("key does not exists")
 
 type AddFunc[T any] func(T, error) error

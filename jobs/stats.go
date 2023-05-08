@@ -1,5 +1,6 @@
 package jobs
 
+// JobStats interface for stats to be collected externally
 type JobStats interface {
 	AddWorkers(int)
 	AddError(int)
